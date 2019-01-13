@@ -1,0 +1,50 @@
+Reflexões acerca da Lição 1:
+
+How did viewing a diff between two versions of a file help you see the bug that
+was introduced?
+    
+    RESP.: Com o Diff, pode-se ser capaz de ver quais linhas foram substituídas ou acrescentadas do primeiro arquivo
+    em relação ao segundo arquivo, tornando mais fácil sua comparação.
+
+How could having easy access to the entire history of a file make you a more
+efficient programmer in the long term?
+
+    RESP.: Através do rápido acesso aos arquivos completos, torna-se mais fácil a análise desses códigos e a verificação
+    mais completa e rápida dos mesmos, prevenindo o surgimento maior de bugs e tornando assim um programador mais eficiente a longo prazo. 
+    Além disso, o acesso ao histórico permite retroceder técnicas antigamente usadas nos quais foram trocadas erroneamente por novas técnicas,
+    muitas vezes não tão funcionais. 
+
+What do you think are the pros and cons of manually choosing when to create a
+commit, like you do in Git, vs having versions automatically saved, like Google
+docs does?
+
+    RESP.: Os prós de se escolher manualmente a realização de um commit são: maior liberdade de escolha quanto ao tamanho das alterações feitas no documento,
+    controle das versões de commits, sendo limitadas e em uma quantidade mais acessível aos desenvolvedores que analisarão os arquivos, e também a identificação
+    e a presença de uma mensagem sob esses commits criados, permitindo maior comparção e entendimento dessas alterações, em detrimento aos salvamentos automáticos,
+    que não possuem essa forma de organização das suas versões. Enquanto que os contras 
+    do uso desse mecanismo são: senso de responsabilidade para o commit desta versão, tendo em vista de que, se esquecer, toda a alteração será perdida, controle e 
+    limitação manual quanto à quantidade de versões criadas de forma que continuem a ser acessíveis e facilmente checadas e analisadas, além de serem necessárias de
+    serem mais complexas do seu conhecimento quanto às versões salvas pelo GIT, devendo ser conhecidas pela equipe como um todo.
+
+Why do you think some version control systems, like Git, allow saving multiple
+files in one commit, while others, like Google Docs, treat each file separately?
+
+    RESP.: Alguns Sistemas de Controles de Versões permitem salvar múltiplos arquivos alterados devido ao fato deles interpretarem esses arquivos como um conjunto,
+    ou seja, repositórios, enquanto que outros SCVs interpretam apenas os arquivos de forma individual, impedindo o salvamento de múltiplos arquivos. 
+
+How can you use the commands git log and git diff to view the history of files?
+
+    RESP.: O comando "git log" permite a listagem de todos os commits realizados dentro daquele repositório, enquanto que "git diff" permite a comparação entre dois commits.
+    Portanto, ao utilizarmos inicialmente o "git log" para verificar os commits presentes, e assim poder ver quais commits são necessários para a comparação, e portanto utilizar
+    o "git diff" com o intuito de verificar as diferenças nas alterações entre eles, logo permitindo a visualização e a correta comparação do histórico dos arquivos.
+
+How might using version control make you more confident to make changes that
+could break something?
+
+    RESP.: Os Controles de Versões permitem que os commits anteriores sejam acessados e executados, permitindo a visualização e o encontro mais rápido dos bugs dos 
+    arquivos
+
+Now that you have your workspace set up, what do you want to try using Git for?
+
+    RESP.: Eu pretendo usar o Git para armazenamento de códigos tanto de exercícios quanto de grandes projetos, bem como armazenamento de arquivos de análises de 
+    dados.

@@ -1,0 +1,44 @@
+Códigos e exemplos de GIT:
+
+"git log": mostra todos os commits feitos naquele repositório
+    + para sair dele, tecle Q(Quit) para retornar ao prompt de comando do repositório
+
+"git diff": semelhante ao FC e diff para comparações de arquivos, sendo que nesse caso ocorre a comparação de
+versões dos arquivos(salvos pelo commit) salvos => git diff commit_id_comparar commit_id_comparado
+
+"git log --stat": loga o GIT e acessa a estatística das alterações criadas em um repositório
+
+"git clone endereco_url_repositorio_copiado": permite copiar/clonar um repositório
+
+"git config --global color.ui auto": configura as cores para verdes(acréscemos) e vermelhos(substituições) 
+
+"git show id_commit --stat": mostra as estatísticas de um commit(id_commit) específico
+
+"git checkout id_commit": permite o uso do arquivo que foi commitado nesse id_commit
+    + para retornar ao master(que possui todos os commits), usa como id_commit o "master" => "git checkout master"
+
+
+"ls -a": lista todos os arquivos e diretórios presentes dentro do local aberto, incluindo os ocultos("-a")
+
+"git init": cria um diretório com extensão .git => diretório oculto
+
+"cd -": retorna um diretório acessado
+
+"git status': mostra um status sobre o diretório git presente no diretório-raíz
+    + mostra também os arquivos que estão na Stanging Area
+
+"git add arquivo.extensao": adiciona um arquivo para a área de preparo, para posteriormente dar commit
+
+"git reset arquivo.extensao": tira um arquivo da área de preparo
+
+Configuração da Área de Trabalho do Git:
+
+
+"mv endereco_arquivo/nome_arquivo.extensao novo_endereco_arquivo/ nome_arquivo.extensao": permite mover um arquivo(nome_arquivo) para outro local(novo_endereco_arquivo)
+    + OBS.: é possível também mudar o nome do arquivo e até sua extensão apenas escrevendo-os no segundo argumento
+        Ex.: "mv endereco_arquivo/nome_arquivo.extensao novo_endereco_arquivo/ novo_nome_arquivo.novo_extensao"
+    + Se não escrever nada no novo_endereco_arquivo, ele reconhecerá automaticamente como endereco_arquivo
+
+"git config --global user.name "Nome do Usuario do Git em questao": permite a configuração global do nome do usuário a ser utilizado em questão
+
+"$ git config --global user.email "emaildousuario@qualquer.com": permite a configuração global do email do usuário a ser utilizado em questão
