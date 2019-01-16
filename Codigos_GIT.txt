@@ -5,6 +5,8 @@ Códigos e exemplos de GIT:
 
 "git diff": semelhante ao FC e diff para comparações de arquivos, sendo que nesse caso ocorre a comparação de
 versões dos arquivos(salvos pelo commit) salvos => git diff commit_id_comparar commit_id_comparado
+    + o comando "git diff" sem argumentos permite a comparação entre o diretório trabalhado e a área de preparo
+    + já o comando "git diff --staged" permite a comparação entre a área de preparo e o repositório Git, com o commit mais recente inserido
 
 "git log --stat": loga o GIT e acessa a estatística das alterações criadas em um repositório
 
@@ -13,6 +15,8 @@ versões dos arquivos(salvos pelo commit) salvos => git diff commit_id_comparar 
 "git config --global color.ui auto": configura as cores para verdes(acréscemos) e vermelhos(substituições) 
 
 "git show id_commit --stat": mostra as estatísticas de um commit(id_commit) específico
+
+"git show id_commit": mostra as diferenças entre o "id_commit" e seu commit pai
 
 "git checkout id_commit": permite o uso do arquivo que foi commitado nesse id_commit
     + para retornar ao master(que possui todos os commits), usa como id_commit o "master" => "git checkout master"
@@ -30,6 +34,26 @@ versões dos arquivos(salvos pelo commit) salvos => git diff commit_id_comparar 
 "git add arquivo.extensao": adiciona um arquivo para a área de preparo, para posteriormente dar commit
 
 "git reset arquivo.extensao": tira um arquivo da área de preparo
+
+"git commit -m 'Commit message'": commita uma alteração da área de preparo para o repositório com uma mensagem presente no 'Commit message'
+
+"git commit": incialmente abre o editor selecionado para ele para que seja escrito uma mensagem de commit, e depois posteriormente commita os arquivos
+
+"git reset --hard": comando que descarta todas as alterações presentes no diretório trabalhado ou na área de preparo
+
+"git branch": lista todos os branches presentes no repositório.
+    + "git branch nome_branch_novo": cria um branch com o nome "nome_branch_novo"
+    + "git branch -d nome_branch": utilizado para deletar o rótulo branch criado => essa deleção não apaga os commits dentro dele, tornando-os inacessíveis(somente com
+    a identificação individual deles, até que o processo de deleção automática do Git seja feito ("git gc" faz isso manualmente))
+
+
+"git log --graph branch_1 branch_2": permite a comparação de duas estruturas de branches dentro de um repositório
+    + se adicionar o "--oneline" depois de "--graph" permitirá a visualização dessas estruturas de forma mais simples
+
+"git merge master branch_nome": permite a fusão do "nome_branch" com o master
+
+"git remote": assim como "git branch", esse comando permite ver remotos
+    +"git remote add nome_remoto": permite criar um remoto com o nome "nome_remoto"
 
 Configuração da Área de Trabalho do Git:
 
