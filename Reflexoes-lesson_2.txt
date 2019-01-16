@@ -1,0 +1,53 @@
+Reflexões sobre a Aula 2 de Git & GitHub:
+
+
+
+What happens when you initialize a repository? Why do you need to do it?
+
+    RESP.: Quando é criado um Repositório, é criado também um diretório .git dentro do diretório-raíz a ser salvo. A criação desse Repositório é necessário
+    pois é a forma como o Git reconhecerá aquele diretório como diretório Git, portanto tendo todas as funcionalidades do mesmo, bem como o controle de versões
+    dos arquivos ali presentes.
+
+How is the staging area different from the working directory and the repository?
+What value do you think it offers?
+
+    RESP.: A área de preparo, como o próprio nome sugere, é uma alocação temporária de memória onde é inserido os arquivos a serem commitados, ou seja, criado 
+    instantâneos da situação dos arquivos inseridos nessa área para que possam ser adicionado no repositório git. Nessa área, diferentemente do repositório e do 
+    diretório-raíz trabalhado naquele momento, é possível a inserção dos arquivos e a remoção dos mesmos, caso necessário. Além disso, com a verificação do status 
+    da situação dos arquivos presentes no diretório Git, é possível ver se os arquivos mudaram, podendo eles serem inseridos de novo com essa nova alteração.
+
+How can you use the staging area to make sure you have one commit per logical
+change?
+
+    RESP.: O uso da Alteração Lógica nos commits permite que apenas quando haja uma alteração significativa, separando-as logicamente. A área de preparo, por permitir
+    a inserção e remoção de arquivos presentes nela com o objetivo de dar um commit, garante essa alteração lógica, bem como sua revisão, devido ao fato de também 
+    permitir a comparação entre a área de preparo e o diretório trabalhado e o commit mais recente do repositório Git, permitindo assim a análise dos conteúdos alterados 
+    dos arquivos presentes na área de preparo e encaminhando-as corretamente ao seu respectivo commit.
+
+What are some situations when branches would be helpful in keeping your history
+organized? How would branches help?
+
+    RESP.: As branches são necessárias em atualizações em andamento de projetos, onde precisa manter os arquivos originais ainda que precise trabalhar com eles. Nessas 
+    operações, cada setor de desenvolvimento do projeto seria responsável por uma parte específica do mesmo, aonde seria necessário a criação de branches dentro do master
+    do projeto para cada setor, melhorando assim a organização e o correto andamento de seu desenvolvimento.
+
+How do the diagrams help you visualize the branch structure?
+
+    RESP.: Os diagramas ajudam a visualizar a estrutura dos branches através de uma visualização com um conceito abstrato como os branches.
+
+What is the result of merging two branches together? Why do we represent it in
+the diagram the way we do?
+
+    RESP.: O resultado com a mesclagem de duas branches é uma branch única, proveniente da branch que estava em checkout, contendo as informações criadas e alteradas 
+    de ambos. Esse processo, do ponto de vista profissional, é excelente, tendo em vista que o desenvolvimento de projetos envolvem diferentes equipes e setores que 
+    posteriormente precisarão unir suas partes em um único branch, geralmente o master, para que o projeto funcione como um. Os branches são representados por diagramas
+    devido ao seu fluxo de commits em cada branch, aonde cada commit mais recente remete a sua versão mais antiga, até atingir um commit pai, sem commit anterior a ele.
+    Esses fluxos não podem ser alterados, e um diagrama representa de forma mais visível como está organizada esses fluxos, tornando mais simples seu entendimento.
+
+What are the pros and cons of Git automatic merging vs. always doing merge
+manually?
+
+    RESP.: Os prós de se realizar mesclagem automaticamente no Git é a praticidade de escolha, sendo que, salvo os conflitos de mesclagem, tem uma boa estratégia de 
+    mesclagem, sendo útil na maioria das situações, enquanto que o contra diz respeito justamente a esses conflitos de mesclagem que podem ocorrer. Esses conflitos 
+    ocorrem principalmente quando há alterações diferentes de uma mesma informação em relação ao original. Nesse caso, é necessário que inicialmente o usuário resolva 
+    esse conflito para que seja dado continuidade à mesclagem.
