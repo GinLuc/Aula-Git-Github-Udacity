@@ -1,29 +1,42 @@
 When would you want to use a remote repository rather than keeping all your work
 local?
 
-    Em situações em que finalizo uma parte do projeto em outro computador, ou então estou em uma equipe de desenvolvedores nesse projeto.
+    RESP.: Em situações em que finalizo uma parte do projeto em outro computador, ou então estou em uma equipe de desenvolvedores nesse projeto.
 
 Why might you want to always pull changes manually rather than having Git
 automatically stay up-to-date with your remote repository?
 
-    Fill in your answer here
+    RESP.: O uso do pull manualmente permite maior controle daquilo que você propriamente necessita para mexer no projeto. Em algumas situações,é 
+    necessário que se dê o pull somente em um branch específico, seja o master ou qualquer outro que seja necssário naquele momento, valendo-se
+    da mesma justificativa para o push manual. Com o pull automático, aconteceria de baixar todos os commits com todos os branches alterados, 
+    gastando tempo e custo operacional desnecessário. 
 
 Describe the differences between forks, clones, and branches.  When would you
 use one instead of another?
 
-    Fill in your answer here
+    RESP.: As Bifurcações(ou Forks) são funções do próprio sistema do Github para que sejam clonados repositórios de usuários dele para outras contas
+    Github, sem a necessidade de dar pull para a máquina, enquanto que clonar é uma função que atua sobre o Github e Git, onde permite a clonagem
+    de um repositório do Github para um repositório Git, seja ele completo ou através de um repositório remoto, e ainda há os branches, que nada 
+    mais são do que rótulos que apontam para os commits, seguindo seu fluxo de versões.
 
 What is the benefit of having a copy of the last known state of the remote
 stored locally?
 
-    Fill in your answer here
+    RESP.: O benefício de ter uma cópia do último estado do repositório remoto armazenado localmente é de verificação da última versão localizada no Github, alterando os
+    arquivos contidos nesse repositório a partir dele.
 
 How would you collaborate without using Git or GitHub?  What would be easier,
 and what would be harder?
 
-    Fill in your answer here
+    RESP.: Sem essas ferramentas, seria necessário compartilhar os projetos em websites e fóruns, copiando manualmente os projetos a medida em que forem alterados, e compartilhando 
+    essas versões uma-a-uma nesses locais. Seria extremamente cansativo e tedioso, tanto para o desenvolvedor do projeto quanto para os usuários interessados nele, pois haveria
+    muitas cópias desnecessárias à finalidade do projeto.
 
 When would you want to make changes in a separate branch rather than directly in
 master?  What benefits does each approach have?
 
-    Fill in your answer here
+    RESP.: As mudanças são commitadas de acordo com a necessidade, também seguindo a regra de alteração lógica. Por isso, essa mesma regra vale também para aplicar 
+    o commit na branch master ou qualquer outra branch, bem como criar uma se necessário, indo sempre de acordo com a estrutura lógica, aonde, caso a alteração seja 
+    opcional com o andamento do projeto, ele pode ser desenvolvido melhor em outro branch, por exemplo. A criação de branches, apesar de ser mais trabalhosa, permite 
+    o desenvolvimento de partes específicas do projeto sem prejudicar o original, localizado no master, enquanto que a realização do projeto no master é mais rápida, 
+    porém impede o desenvolvimento de partes específicas sem alterar o projeto original.

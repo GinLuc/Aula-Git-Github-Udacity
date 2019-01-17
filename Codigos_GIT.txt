@@ -55,6 +55,16 @@ versões dos arquivos(salvos pelo commit) salvos => git diff commit_id_comparar 
 "git remote": assim como "git branch", esse comando permite ver remotos
     +"git remote add nome_remoto": permite criar um remoto com o nome "nome_remoto"
 
+
+"git push nome_repositorio nome_branch": permite passar os dados do repositório Git para o repositório remoto, e assim colocá-los no 
+repositório Github
+
+"git pull nome_remoto nome_branch": permite passar os arquivos do repositório do Github para o repositório remoto
+
+"git fecth nome_remoto": permite atualizar todas as cópias locais de cada branch local do Github no Git, ou o repositório remoto, criando um novo branch, de nome 'nome_remoto\nome_branch', 
+contendo as alterações do Github que estão na posição dos commits do Git
+
+
 Configuração da Área de Trabalho do Git:
 
 
